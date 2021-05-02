@@ -1,145 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>NewsFeed | Pages | Single Page</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/animate.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/font.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/li-scroller.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/slick.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/jquery.fancybox.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/theme.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-<!--[if lt IE 9]>
+  <title>NewsFeed | Pages | Single Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/font.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/li-scroller.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+  <!--[if lt IE 9]>
 <script src="../assets/js/html5shiv.min.js"></script>
 <script src="../assets/js/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
-<div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
-<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<div class="container">
-  <header id="header">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="header_top">
-          <div class="header_top_left">
-            <ul class="top_nav">
-              <li><a href="../../../index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <div class="container">
+    <header id="header">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="header_top">
+            <div class="header_top_left">
+              <ul class="top_nav">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="header_bottom">
+            <div class="logo_area"><a href="../../../index.html" class="logo"><img src="../../../images/logo.png" alt=""></a></div>
           </div>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="header_bottom">
-          <div class="logo_area"><a href="../../../index.html" class="logo"><img src="../../../images/logo.png" alt=""></a></div>
+    </header>
+    <section id="navArea">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-      </div>
-    </div>
-  </header>
-  <section id="navArea">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav main_nav">
-          <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sport</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="pages/sport/cricket/cricket.html">Cricket</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <section id="newsSection">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="latest_newsarea"> <span>Latest News</span>
-          <ul id="ticker01" class="news_sticker">
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
-            <li><a href="#"><img src="../../../images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav main_nav">
+            <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sport</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="pages/sport/cricket/cricket.html">Cricket</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="contentSection">
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8">
-        <div class="left_content">
-          <div class="single_page">
-            <ol class="breadcrumb">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="#">Sport</a></li>
-              <li class="active">Cricket</li>
-            </ol>
-            <h1>IPL 20: PBKS vs KKR</h1>
-            <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Akshay Sakpal</a> <span><i class="fa fa-calendar"></i>7:06 PM</span> <a href="#"><i class="fa fa-tags"></i>Cricket</a> </div>
-            <div class="single_page_content"> <img class="img-center" src="../../../images/sport/cricket/ipl/21.png" alt="" style="width: 100%;">
-              <h3>PITCH REPORT</h3>
-              <blockquote>The pitch in Ahmedabad has been suitable for batting. The five-match T20I series between India and England took place at the venue and it turned out to be a high-scoring series.</blockquote>
-              <h3>GROUND RECORDS AND STATISTICS</h3>
-              <blockquote>
-                <ul>
-                  <li>Matches Played : 6</li>
-                  <li>Highest Individual Innings : 83* (J C Buttler)</li>
-                  <li>Best Bowling : 4/33 (J C Archer)</li>
-                  <li>Highest Team Innings : 224/2</li>
-                </ul>
-              </blockquote>
-              <h3>PBKS VS KKR HEAD TO HEAD RECORDS & STATS</h3>
-              <blockquote>
-                <ul>
-                  <li>Matches Played : 27</li>
-                  <li>PBKS Won : 9</li>
-                  <li>KKR Won : 18</li>
-                  <li>Highest PBKS Score : 214</li>
-                  <li>Highest KKR Score : 245</li>
-                </ul>
-              </blockquote>
-              <h3>PLAYERS TO WATCH OUT IN MATCH</h3>
-              <blockquote>
-                <ul>
-                  <li>KL Rahul</li>
-                  <li>N Rana</li>
-                </ul>
-              </blockquote>
-              <h3>PBKS vs KKR: Dream11 Fantasy Team</h3>
-              <blockquote>
-                <ul>
-                  <li>D Kartik</li>
-                  <li>KL Rahul (c)</li>
-                  <li>N Pooran</li>
-                  <li>M Agrawal</li>
-                  <li>N Rana (VC)</li>
-                  <li>S Gill</li>
-                  <li>A Russell</li>
-                  <li>D Hooda</li>
-                  <li>M Shami</li>
-                  <li>P Cummins</li>
-                  <li>V Chakravartty</li>
-                </ul>
-              </blockquote>
-            </div>
-            <!--
+      </nav>
+    </section>
+    <section id="contentSection">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <div class="left_content">
+            <div class="single_page">
+              <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Sport</a></li>
+                <li class="active">Cricket</li>
+              </ol>
+              <h1>IPL 20: PBKS vs KKR</h1>
+              <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Akshay Sakpal</a> <span><i class="fa fa-calendar"></i>7:06 PM</span> <a href="#"><i class="fa fa-tags"></i>Cricket</a> </div>
+              <div class="single_page_content"> <img class="img-center" src="../../../images/sport/cricket/ipl/21.png" alt="" style="width: 100%;">
+                <h3>PITCH REPORT</h3>
+                <blockquote>The pitch in Ahmedabad has been suitable for batting. The five-match T20I series between India and England took place at the venue and it turned out to be a high-scoring series.</blockquote>
+                <h3>GROUND RECORDS AND STATISTICS</h3>
+                <blockquote>
+                  <ul>
+                    <li>Matches Played : 6</li>
+                    <li>Highest Individual Innings : 83* (J C Buttler)</li>
+                    <li>Best Bowling : 4/33 (J C Archer)</li>
+                    <li>Highest Team Innings : 224/2</li>
+                  </ul>
+                </blockquote>
+                <h3>PBKS VS KKR HEAD TO HEAD RECORDS & STATS</h3>
+                <blockquote>
+                  <ul>
+                    <li>Matches Played : 27</li>
+                    <li>PBKS Won : 9</li>
+                    <li>KKR Won : 18</li>
+                    <li>Highest PBKS Score : 214</li>
+                    <li>Highest KKR Score : 245</li>
+                  </ul>
+                </blockquote>
+                <h3>PLAYERS TO WATCH OUT IN MATCH</h3>
+                <blockquote>
+                  <ul>
+                    <li>KL Rahul</li>
+                    <li>N Rana</li>
+                  </ul>
+                </blockquote>
+                <h3>PBKS vs KKR: Dream11 Fantasy Team</h3>
+                <blockquote>
+                  <ul>
+                    <li>D Kartik</li>
+                    <li>KL Rahul (c)</li>
+                    <li>N Pooran</li>
+                    <li>M Agrawal</li>
+                    <li>N Rana (VC)</li>
+                    <li>S Gill</li>
+                    <li>A Russell</li>
+                    <li>D Hooda</li>
+                    <li>M Shami</li>
+                    <li>P Cummins</li>
+                    <li>V Chakravartty</li>
+                  </ul>
+                </blockquote>
+              </div>
+              <!--
               <div class="related_post">
                 <h2>Related Post <i class="fa fa-thumbs-o-up"></i></h2>
                 <ul class="spost_nav wow fadeInDown animated">
@@ -161,22 +145,24 @@
                 </ul>
               </div>
             -->
+            </div>
           </div>
         </div>
-      </div>
-      <nav class="nav-slit"> <a class="prev" href="#"> <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
-        <div>
-          <h3>City Lights</h3>
-          <img src="../../../images/post_img1.jpg" alt=""/> </div>
-        </a> <a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
-        <div>
-          <h3>Street Hills</h3>
-          <img src="../../../images/post_img1.jpg" alt=""/> </div>
-        </a> </nav>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <aside class="right_content">
-          <!-- POPULAR POST -->
-          <!--
+        <nav class="nav-slit"> <a class="prev" href="#"> <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
+            <div>
+              <h3>City Lights</h3>
+              <img src="../../../images/post_img1.jpg" alt="" />
+            </div>
+          </a> <a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
+            <div>
+              <h3>Street Hills</h3>
+              <img src="../../../images/post_img1.jpg" alt="" />
+            </div>
+          </a> </nav>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <aside class="right_content">
+            <!-- POPULAR POST -->
+            <!--
 `          <div class="single_sidebar">
             <h2><span>Popular Post</span></h2>
             <ul class="spost_nav">
@@ -203,31 +189,32 @@
             </ul>
           </div>`
           -->
-          <!-- SPONSOR -->
-          <!--
+            <!-- SPONSOR -->
+            <!--
             <div class="single_sidebar wow fadeInDown">
               <h2><span>Sponsor</span></h2>
               <a class="sideAdd" href="#"><img src="../../../images/add_img.jpg" alt=""></a>
             </div>
           -->
-        </aside>
+          </aside>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer id="footer">
-    <div class="footer_bottom">
-      <p class="copyright">Copyright &copy; 2045 <a href="../../../index.html">ChemburTimes</a></p>
-      <p class="developer">Developed By Hachiko</p>
-    </div>
-  </footer>
-</div>
-<script src="../../../assets/js/jquery.min.js"></script>
-<script src="../../../assets/js/wow.min.js"></script>
-<script src="../../../assets/js/bootstrap.min.js"></script>
-<script src="../../../assets/js/slick.min.js"></script>
-<script src="../../../assets/js/jquery.li-scroller.1.0.js"></script>
-<script src="../../../assets/js/jquery.newsTicker.min.js"></script>
-<script src="../../../assets/js/jquery.fancybox.pack.js"></script>
-<script src="../../../assets/js/custom.js"></script>
+    </section>
+    <footer id="footer">
+      <div class="footer_bottom">
+        <p class="copyright">Copyright &copy; 2045 <a href="../../../index.html">ChemburTimes</a></p>
+        <p class="developer">Developed By Hachiko</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../../assets/js/jquery.min.js"></script>
+  <script src="../../../assets/js/wow.min.js"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/slick.min.js"></script>
+  <script src="../../../assets/js/jquery.li-scroller.1.0.js"></script>
+  <script src="../../../assets/js/jquery.newsTicker.min.js"></script>
+  <script src="../../../assets/js/jquery.fancybox.pack.js"></script>
+  <script src="../../../assets/js/custom.js"></script>
 </body>
+
 </html>
